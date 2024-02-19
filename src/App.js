@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { AvatarSection } from "./components/AvatarSection";
+import { Main } from "./components/Main";
+import { data } from "./components/dataStore";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+	return (
+		<div className=" bg-overallBgImg bg-cover h-fit md:h-full font-[Poppins] text-sm text-gray-800 ">
+			<div className=" bg-overallBgOpacity h-fit md:h-full ">
+				<div className=" grid md:grid-cols-2 h-full">
+					<AvatarSection userName={data.userName} Role={data.Role} />
+					<Main />
+				</div>
+			</div>
+		</div>
+	);
+};
