@@ -19,7 +19,7 @@ export const Main = (props) => {
 					return (
 						<div className="py-3">
 							<div>
-								<h1>
+								<h1 className=" text-lg text-orange-600">
 									<b>{title}</b>
 								</h1>
 								<div>
@@ -29,15 +29,15 @@ export const Main = (props) => {
 							{/* Stacks Array List*/}
 							<div className="py-5">
 								<h1>
-									<b>{subHeading1}</b>
+									<b className=" text-slate-950">{subHeading1}</b>
 								</h1>
 								<p>{subtext1}</p>
 								<h1>
-									<b>{subHeading2}</b>
+									<b className=" text-slate-950">{subHeading2}</b>
 								</h1>
 								<p>{subtext2}</p>
 								<h1>
-									<b>{subHeading3}</b>
+									<b className=" text-slate-950">{subHeading3}</b>
 								</h1>
 								<p>{subtext3}</p>
 							</div>

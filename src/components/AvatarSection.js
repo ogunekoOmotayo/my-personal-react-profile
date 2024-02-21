@@ -29,7 +29,7 @@ export const AvatarSection = (props) => {
 					<div className="flex py-5  ">
 						<button
 							onClick={emailClickHandler}
-							className="profile_btn bg-[#c99853] text-[#e7d5a3]  mr-3"
+							className="profile_btn bg-[#c99853] text-[#e7d5a3]  mr-3 border-none"
 						>
 							<i
 								className="fas fa-envelope text-sm mr-1 text-orange-600"
